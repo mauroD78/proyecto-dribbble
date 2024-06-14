@@ -1,0 +1,245 @@
+/*Hard Reset*/
+/*Reset*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*Definir mis varibles CSS*/
+:root {
+  /*Definicion de tamaño en unidades REMs*/
+
+  /*Definicion de colores*/
+  --pampas: #f8f7f4;
+
+  --body-fs: 1.6rem;
+  --header-bg-color: var(--main-bg-color);
+  --header-fs: 1.4rem;
+  --header-p: 4rem;
+  --header-a: 1.6rem;
+  --header-h: 10rem;
+  --header-link-color: #000;
+  --html-fs: 62.5%;
+
+  --main-bg-color: var(--pampas);
+
+  --search-bg: #fff;
+  --search-icon-fill: #6e6d7a;
+  --search-br: 2.4rem;
+  --search-w: 28.5rem;
+  --menu-der-h: 4.8rem;
+}
+
+/*configuracion de estilos*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*1rem=10px*/
+  font-size: var(--html-fs);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 1.6 x 10px=16px*/
+  font-size: var(--body-fs);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--header-p);
+  height: var(--header-h);
+  /* 1.4 x 10px=14px*/
+  align-items: center;
+  font-size: var(--header-fs); /* 14px */
+  font-weight: bold;
+  background-color: var(--header-bg-color);
+}
+
+header ul {
+  flex: 1; /*Va a utilizar el mayor espacio de pueda crecer*/
+  /*quita los puntos de una lista desordenada*/
+  list-style-type: none;
+}
+
+header ul li a {
+  color: var(--header-link-color);
+  text-decoration: none;
+  padding-left: var(--header-a);
+  padding-right: var(--header-a);
+}
+
+.menu-izq {
+  display: flex;
+}
+
+.menu-der {
+  display: flex;
+  height: var(--menu-der-h);
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: var(--search-w);
+  background-color: var(--search-bg);
+  border-radius: var(--search-br);
+  padding: 2rem;
+}
+
+.search > input {
+  border: none;
+  background-color: transparent;
+}
+.search > input:focus {
+  border: none;
+  outline: none;
+}
+.search-icon {
+  margin-right: 1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: var(--search-icon-fill);
+}
+
+.login {
+  /* margin-left: 2rem;*/
+  /* margin-right: 2rem;*/
+  /*Asignle la margin de arriba y abajo 0px y de la izquierda y deredcha 2rem*/
+  margin: 0 2rem;
+}
+
+.header img {
+  margin: 0 2rem;
+}
+.menu-der .login:hover a {
+  color: #f4f5fb;
+  transition: 1s;
+}
+
+.menu-der .register {
+  padding: 2rem;
+  border-radius: 6rem;
+  background-color: #000;
+}
+
+.menu-der .register a {
+  color: #ffffff;
+}
+
+.hero {
+  margin: 0 auto;
+  padding-top: 8rem;
+  width: 126.4rem;
+  height: 32.8rem;
+}
+.hero-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-container > h5 {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  background-color: #ffda79;
+}
+.hero-container > h2 {
+  font-size: 6rem;
+  font-family: cursive;
+}
+
+.hero-container > h3 {
+  font-size: 2.4rem;
+  font-family: monospace;
+  margin: 0 auto;
+}
+
+.started {
+  display: flex;
+  width: auto;
+  background-color: #0e2f44;
+  border-radius: 1rem;
+  padding: 2rem 4.5rem;
+  border-radius: 30rem;
+}
+.started-a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 70rem;
+}
+
+.find-container > h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 20rem 50rem;
+  text-align: center;
+  font-size: 6rem;
+}
+.footer-find {
+  background-color: #ffda79;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.find-container > h2 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.find-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+
+.footer-text {
+  width: 70rem;
+  margin: 0 0 5rem 0;
+}
+
+.button-footer {
+  text-decoration: none;
+}
+
+.learn {
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  padding: 1.6rem;
+  border-radius: 2rem;
+}
+.get {
+  font-size: 1.5rem;
+  background-color: #092231;
+  color: #fff;
+  padding: 1.6rem;
+  border-radius: 2rem;
+}
+
+.button-box {
+  margin: 0 0 5rem 0;
+}
+
+.designer-text p {
+  font-size: 2.5rem;
+}
